@@ -11,9 +11,7 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import java.util.*;
 import java.io.*;
 
-/* Main Problem with this program
- * The values from the Mapper are not being passed to the Reducer
- */
+
 
 public class MapReduce {
 	public static class Map extends Mapper<LongWritable ,Text, Text, FloatWritable>{
